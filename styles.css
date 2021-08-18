@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: var(--color-tint-2);
+}
+
+:root {
+  --color-primary: hsl(225, 100%, 94%);
+  --color-shade: hsl(245, 75%, 52%);
+  --color-shade-2: hsl(223, 47%, 23%);
+  --color-tint: hsl(225, 100%, 98%);
+  --color-tint-2: hsl(224, 23%, 55%);
+}
+
+.container {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url(images/pattern-background-desktop.svg);
+  background-size: 1440;
+  background-repeat: no-repeat;
+  background-color: var(--color-primary);
+}
+
+.card {
+  max-width: 450px;
+  margin: 100px 0;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  background-color: var(--color-tint);
+  box-shadow: 0px 30px 20px 3px hsla(223, 12%, 40%, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-title {
+  color: var(--color-shade-2);
+  margin-top: 48px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.card-description {
+  margin: 16px 50px;
+  text-align: center;
+  /* letter-spacing: 0.5px; */
+  line-height: 1.6;
+}
+
+.card-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.plan-icon {
+  margin-right: 20px;
+}
+
+.plan-type {
+  color: var(--color-shade-2);
+  font-weight: 900;
+  margin-right: 90px;
+  margin-bottom: 10px;
+}
+
+.plan-change:visited,
+.plan-change:link {
+  color: var(--color-shade);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.plan-change:hover,
+.plan-change :active {
+  color: hsl(245, 83%, 68%);
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:active {
+  color: var(--color-shade-2);
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  display: inline-block;
+  width: 350px;
+  background-color: var(--color-shade);
+  box-shadow: 0px 15px 5px rgba(68, 68, 68, 0.1);
+  color: var(--color-tint);
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: hsl(245, 83%, 68%);
+  box-shadow: 0px 5px 5px rgba(68, 68, 68, 0.1);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
