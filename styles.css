@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   background: url(images/pattern-background-desktop.svg);
-  background-size: 1440;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-color: var(--color-primary);
 }
@@ -43,6 +43,7 @@
 
 .img {
   border-radius: 20px 20px 0 0;
+  width: 100%;
 }
 
 .card-title {
@@ -55,7 +56,6 @@
 .card-description {
   margin: 16px 50px;
   text-align: center;
-  /* letter-spacing: 0.5px; */
   line-height: 1.6;
 }
 
@@ -131,4 +131,32 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    background: url(images/pattern-background-mobile.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: var(--color-primary);
+  }
+
+  .card {
+    margin: 70px 0;
+    width: 330px;
+  }
+
+  .plan-type {
+    margin-right: 45px;
+    margin-bottom: 5px;
+  }
+
+  .btn--primary:link,
+  .btn--primary:visited {
+    width: 280px;
+  }
 }
